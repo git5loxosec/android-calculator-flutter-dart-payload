@@ -1,5 +1,9 @@
 # FUD Payload - Reverse shell calculator app - Flutter project
 
+:robot: Features
+- No permissions required
+- Fully undetectable 
+
 :bulb: Overview
 This project features a unique combination of a basic calculator app developed in Flutter and integrated with reverse shell functionality. It serves as an educational tool for understanding network communications, process handling, and the security implications of remote command execution in mobile environments.
 
